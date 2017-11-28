@@ -1,0 +1,20 @@
+@import '../variables';
+
+app-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: ". title buttons";
+}
+
+app-item-list-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "list list list";
+}
+
+app-action-list-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $eggshell;
+}

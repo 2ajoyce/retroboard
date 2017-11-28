@@ -1,0 +1,18 @@
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+i {
+  font-size: 100%;
+}
+
+i.heart {
+  margin-right: 0.5em;
+}
+
+i.edit {
+  margin-left: 0.5em;
+}

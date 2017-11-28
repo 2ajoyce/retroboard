@@ -1,0 +1,11 @@
+#buttons {
+  grid-area: buttons;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#title {
+  grid-area: title;
+  margin: auto;
+}

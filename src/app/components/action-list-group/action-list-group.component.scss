@@ -1,0 +1,10 @@
+app-action-list {
+  margin: auto;
+}
+
+#action-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "list list list";
+  width: 100%;
+}
