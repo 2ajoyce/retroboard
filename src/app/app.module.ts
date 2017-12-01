@@ -10,6 +10,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { ItemListGroupComponent } from './components/item-list-group/item-list-group.component';
 import { ActionListGroupComponent } from './components/action-list-group/action-list-group.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { ActionListGroupComponent } from './components/action-list-group/action-
   ],
   imports: [
     BrowserModule,
-    MatInputModule
+    MatInputModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
