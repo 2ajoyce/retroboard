@@ -1,2 +1,6 @@
-<input type="text" placeholder={{placeholder}}>
+<form class="action-form">
+  <mat-form-field class="full-width">
+    <input matInput placeholder={{placeholder}}>
+  </mat-form-field>
+</form>
 <app-item *ngFor="let item of list" [item]="item"></app-item>
