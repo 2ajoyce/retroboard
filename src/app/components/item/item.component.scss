@@ -3,6 +3,16 @@ div {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border-radius: 0.25em;
+}
+
+p {
+  flex: 1;
+  margin: 0;
 }
 
 i {
@@ -14,5 +24,4 @@ i.heart {
 }
 
 i.edit {
-  margin-left: 0.5em;
 }
