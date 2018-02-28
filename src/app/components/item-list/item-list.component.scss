@@ -1,3 +1,16 @@
 app-item-list {
   grid-area: list;
 }
+
+input {
+  width: calc(100% - 2em);
+  padding: 1em;
+  border-radius: 0.25em;
+  margin: 0.5em 0;
+  border: 0;
+  background-color: rgba(0, 0, 0, .1);
+
+  &:focus {
+    outline-width: 0;
+  }
+}
