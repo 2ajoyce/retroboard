@@ -13,6 +13,7 @@ div {
 p {
   flex: 1;
   margin: 0;
+  font-weight: 500;
 }
 
 i {
@@ -24,4 +25,6 @@ i.heart {
 }
 
 i.edit {
+  margin-left: 8px;
+  color: gray;
 }

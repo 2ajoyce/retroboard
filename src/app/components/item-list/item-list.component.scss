@@ -9,6 +9,12 @@ input {
   margin: 0.5em 0;
   border: 0;
   background-color: rgba(0, 0, 0, .1);
+  margin-bottom: 1em;
+  color: rgba(255, 255, 255, .9);
+
+  &::placeholder {
+    color: rgba(255, 255, 255, .6);
+  }
 
   &:focus {
     outline-width: 0;

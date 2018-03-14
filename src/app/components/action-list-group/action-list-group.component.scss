@@ -2,9 +2,29 @@ app-action-list {
   padding: 0 1em;
 }
 
+h4 {
+  margin: 0.5em 0;
+}
+
 #action-lists {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "list list list";
   width: 100%;
+}
+
+input {
+  width: calc(100% - 2em);
+  padding: 1em;
+  border-radius: 0.25em;
+  margin: 0.5em 0;
+  border: 0;
+  background-color: rgba(0, 0, 0, .1);
+  margin-bottom: 1em;
+  &::placeholder {
+    color: rgba(255, 255, 255, .6);
+  }
+  &:focus {
+    outline-width: 0;
+  }
 }
