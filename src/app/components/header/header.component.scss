@@ -1,11 +1,24 @@
+@import './../../assets/mixins/mixins';
+
+.header-root {
+    margin: 0 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 #buttons {
-  grid-area: buttons;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  margin-left: auto;
+
+  button {
+    @include font();
+    padding: 0.5em;
+    background-color: #2574a9;
+    border: none;
+    color: #fafafa;
+  }
 }
 
 #title {
-  grid-area: title;
-  margin: auto;
+  @include spacing(0, 0);
 }

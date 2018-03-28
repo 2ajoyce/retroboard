@@ -1,0 +1,21 @@
+@mixin font() {
+    font-family: Roboto;
+}
+
+@mixin spacing($margin, $padding) {
+    @include margin($margin);
+    @include padding($padding);
+}
+
+@mixin margin($margin...) {
+    @each $var in $margin {
+        margin: #{$var};
+    }
+}
+
+@mixin padding($padding...) {
+    @each $var in $padding {
+        padding: #{$var};
+    }
+}
+

@@ -8,6 +8,7 @@ import { Item } from '../../models/item';
 })
 export class ItemComponent implements OnInit {
   @Input() item: Item;
+  favoriteCount: number = 0;
 
   constructor() {
   }
