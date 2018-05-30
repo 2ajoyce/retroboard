@@ -1,6 +1,6 @@
 <div>
   <div class="favorite-area">
-    <i class="heart material-icons">favorite</i>
+    <i class="heart material-icons" (click)="favorite()">favorite</i>
     <div *ngIf="favoriteCount != 0" class="favorite-count">{{favoriteCount}}</div>
   </div>
   <p class="mat-body-1">{{ item.description }}</p>

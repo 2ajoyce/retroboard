@@ -22,4 +22,12 @@ describe('ItemComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+  describe('favorite', () => {
+    it('should increment favorite count', () => {
+      const count = component.favoriteCount;
+      component.favorite();
+      expect(component.favoriteCount).toEqual(count);
+    });
+  });
 });

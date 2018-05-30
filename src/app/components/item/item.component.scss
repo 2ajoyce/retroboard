@@ -18,6 +18,7 @@ p {
 
 i {
   font-size: 100%;
+  pointer: cursor;
 }
 
 i.heart {
@@ -27,4 +28,14 @@ i.heart {
 i.edit {
   margin-left: 8px;
   color: gray;
+}
+
+.favorite-area {
+  display: flex;
+  flex-flow: column;
+}
+
+.favorite-count {
+  margin: 0 .5em 0 0;
+  padding: 0;
 }

@@ -16,4 +16,8 @@ export class ItemComponent implements OnInit {
   ngOnInit() {
   }
 
+  favorite(): void {
+    ++this.favoriteCount;
+  }
+
 }
