@@ -22,6 +22,6 @@ input {
 }
 
 img {
-  margin: .75em 0 .1em 0;
-  padding: 0 calc(50% - 6px);
+  display: block;
+  margin: .75em auto .1em auto;
 }
