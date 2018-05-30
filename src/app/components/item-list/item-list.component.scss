@@ -3,7 +3,6 @@ app-item-list {
 }
 
 input {
-  width: calc(100% - 2em);
   padding: 1em;
   border-radius: 0.25em;
   margin: 0.5em 0;
@@ -11,6 +10,7 @@ input {
   background-color: rgba(0, 0, 0, .1);
   margin-bottom: 1em;
   color: rgba(255, 255, 255, .9);
+  width: 100%;
 
   &::placeholder {
     color: rgba(255, 255, 255, .6);
