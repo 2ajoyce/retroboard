@@ -8,7 +8,8 @@ import { Item } from '../../models/item';
 })
 export class ItemComponent implements OnInit {
   @Input() item: Item;
-  favoriteCount: number = 0;
+  favoriteCount = 0;
+  isEditing = false;
 
   constructor() {
   }
@@ -20,4 +21,7 @@ export class ItemComponent implements OnInit {
     ++this.favoriteCount;
   }
 
+  toggleEditing() {
+    this.isEditing = !this.isEditing;
+  }
 }
