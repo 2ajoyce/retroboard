@@ -10,11 +10,11 @@ export class ItemListComponent implements OnInit {
   @Input() list: Item[];
   @Input() placeholder: string;
   @Input() item: string;
+  @Input() imageSrc: string;
 
   constructor() {
   }
 
   ngOnInit() {
   }
-
 }

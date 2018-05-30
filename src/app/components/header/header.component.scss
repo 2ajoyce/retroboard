@@ -8,6 +8,7 @@
 }
 
 #buttons {
+  float: right;
   margin-left: auto;
 
   button {
@@ -21,4 +22,6 @@
 
 #title {
   @include spacing(0, 0);
+  text-align: center;
+  width: 100%;
 }
