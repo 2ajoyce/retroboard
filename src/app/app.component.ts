@@ -1,15 +1,24 @@
-import { Component } from '@angular/core';
-import { Item } from './models/item';
-import { Action } from './models/action';
+import {Component} from '@angular/core';
+import {Item} from './models/item';
+import {Action} from './models/action';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  template: `
+    <app-header></app-header>
+    <app-item-list-group
+      [green]="green"
+      [yellow]="yellow"
+      [red]="red"
+    ></app-item-list-group>
+    <app-action-list-group
+      [current]="current"
+      [old]="old"
+      [older]="older"
+    ></app-action-list-group>`
 })
 export class AppComponent {
-  title = 'app';
-
   green: Item[] = [
     {description: 'The first green item'},
     {description: 'The second green item'},
