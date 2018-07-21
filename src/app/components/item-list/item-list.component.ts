@@ -1,10 +1,19 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Item } from '../../models/item';
+import {Component, Input, OnInit} from '@angular/core';
+import {Item} from '../../models/item';
 
 @Component({
   selector: 'app-item-list',
-  templateUrl: './item-list.component.html',
-  styleUrls: ['./item-list.component.scss']
+  styleUrls: ['./item-list.component.scss'],
+  template: `
+    <img [src]="imageSrc">
+    <form class="action-form">
+      <input placeholder="placeholder">
+    </form>
+    <app-item
+      *ngFor="let item of list"
+      [item]="item"
+    ></app-item>
+  `
 })
 export class ItemListComponent implements OnInit {
   @Input() list: Item[];
