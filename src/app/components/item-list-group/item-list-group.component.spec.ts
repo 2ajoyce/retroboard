@@ -4,7 +4,7 @@ import {ItemListGroupComponent} from './item-list-group.component';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {By} from '@angular/platform-browser';
 
-fdescribe('ItemListGroupComponent', () => {
+describe('ItemListGroupComponent', () => {
   let component: ItemListGroupComponent;
   let fixture: ComponentFixture<ItemListGroupComponent>;
 

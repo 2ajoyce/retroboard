@@ -1,21 +1,25 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Item } from '../../models/item';
+import {Component, Input} from '@angular/core';
+import {Item} from '../../models/item';
 
 @Component({
   selector: 'app-item',
-  templateUrl: './item.component.html',
-  styleUrls: ['./item.component.scss']
+  styleUrls: ['./item.component.scss'],
+  template: `
+    <div>
+      <div class="favorite-area">
+        <i class="heart material-icons" (click)="favorite()">favorite</i>
+        <div *ngIf="favoriteCount > 0" class="favorite-count">{{favoriteCount}}</div>
+      </div>
+      <p *ngIf="!isEditing" class="mat-body-1">{{ item.description }}</p>
+      <input *ngIf="isEditing" type="text" [(ngModel)]="item.description" autofocus>
+      <i class="edit material-icons" (click)="toggleEditing()">edit</i>
+    </div>
+  `
 })
-export class ItemComponent implements OnInit {
+export class ItemComponent {
   @Input() item: Item;
   favoriteCount = 0;
   isEditing = false;
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
 
   favorite(): void {
     ++this.favoriteCount;
