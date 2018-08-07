@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  template: `
+    <div class="header-root">
+      <h1 id="title">{{title}}</h1>
+      <div id="buttons">
+        <button>Menu</button>
+      </div>
+    </div>
+  `
 })
-export class HeaderComponent implements OnInit {
-  public title = 'Retro';
-  constructor() { }
+export class HeaderComponent {
+  title = 'Retro';
 
-  ngOnInit() {
+  constructor() {
   }
-
 }
