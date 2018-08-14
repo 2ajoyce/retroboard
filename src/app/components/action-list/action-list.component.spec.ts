@@ -5,7 +5,7 @@ import {By} from '@angular/platform-browser';
 import {DebugElement, NO_ERRORS_SCHEMA} from '@angular/core';
 import {Action} from '../../models/action';
 
-fdescribe('ActionListComponent', () => {
+describe('ActionListComponent', () => {
   let component: ActionListComponent;
   let fixture: ComponentFixture<ActionListComponent>;
 

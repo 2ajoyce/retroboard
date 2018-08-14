@@ -1,18 +1,17 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Action } from '../../models/action';
+import {Component, Input} from '@angular/core';
+import {Action} from '../../models/action';
 
 @Component({
   selector: 'app-action',
-  templateUrl: './action.component.html',
+  template: `
+    <div>
+      <p class="mat-body-1">
+        {{action?.description}}
+      </p>
+    </div>
+  `,
   styleUrls: ['./action.component.scss']
 })
-export class ActionComponent implements OnInit {
+export class ActionComponent {
   @Input() action: Action;
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
 }
