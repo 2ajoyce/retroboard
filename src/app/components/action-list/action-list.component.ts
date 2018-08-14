@@ -1,18 +1,13 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Action } from '../../models/action';
+import {Component, Input} from '@angular/core';
+import {Action} from '../../models/action';
 
 @Component({
   selector: 'app-action-list',
-  templateUrl: './action-list.component.html',
-  styleUrls: ['./action-list.component.scss']
+  styleUrls: ['./action-list.component.scss'],
+  template: `
+    <app-action *ngFor="let action of list" [action]="action"></app-action>
+  `
 })
-export class ActionListComponent implements OnInit {
+export class ActionListComponent {
   @Input() list: Action[];
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
 }
